@@ -16,8 +16,8 @@ const ButtonVariant = {
 };
 
 const ButtonSize = {
-  xs: "py-1 px-4 text-1px",
-  sm: "py-3 px-3 text-xs",
+  xs: "py-1 px-4 text-xs",
+  sm: "py-2 px-3 text-xs",
   lg: "py-3 px-7 text-xs",
 };
 

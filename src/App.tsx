@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="m-5">
         <h1 className="font-satoshi font-bold mb-2 text-lg">Button</h1>
-        <div className="flex  gap-5">
+        <div className="flex flex-wrap sm:flex-row  gap-5">
           <Button
             size="xs"
             fullWidth="false"
@@ -21,10 +21,10 @@ function App() {
           <Button size="xs" fullWidth="false" variant="secondary">
             Log In
           </Button>
-          <Button size="xs" fullWidth="false" variant="secondary">
+          <Button size="sm" fullWidth="false" variant="secondary">
             Learn more
           </Button>
-          <Button size="xs" fullWidth="false" variant="disabled">
+          <Button size="lg" fullWidth="true" variant="disabled">
             Disabled
           </Button>
         </div>
