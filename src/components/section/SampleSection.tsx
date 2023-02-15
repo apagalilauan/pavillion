@@ -2,11 +2,7 @@ import React from "react";
 import Card from "../card/Card";
 import Chip from "../chip/Chip";
 
-interface Props {
-  data: String;
-}
-
-const SampleSection = ({ data }: Props) => {
+const SampleSection = ({ data }: any) => {
   return (
     <div className="mb-5 font-satoshi">
       <div className="flex flex-col sm:flex-row gap-5  bg-gray-800 items-center rounded-lg px-10 py-10">
@@ -36,7 +32,7 @@ const SampleSection = ({ data }: Props) => {
             <div>
               <h1 className="text-white font-bold text-lg">Quick Overview</h1>
 
-              {data.overview.map((item) => {
+              {data.overview.map((item: any) => {
                 return <div>{item.info}</div>;
               })}
             </div>
@@ -48,7 +44,7 @@ const SampleSection = ({ data }: Props) => {
               <p>{data.latestProjects.desc}</p>
             </div>
             <div className="flex gap-3 ">
-              {data.latestProjects.projects.tags.map((item) => {
+              {data.latestProjects.projects.tags.map((item: any) => {
                 return <Chip variant="outlined">{item.tagName}</Chip>;
               })}
             </div>
